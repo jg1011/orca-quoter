@@ -1,0 +1,12 @@
+[package]
+name = "swap-quoter"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+solana-sdk = ">=1.14, <1.17"
+solana-client = ">=1.14, <1.17"
+solana-program = ">=1.16, <3.0"
+orca_whirlpools_client = "=3.0.0"
+orca_whirlpools_core = "=2.0.0"
+clap = { version = "4", features = ["derive"] }
