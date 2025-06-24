@@ -14,10 +14,10 @@ after implementing your logic in ```crates/cli/src/main.rs``` to test functions.
 
 ## TO-DO
 
-- Finish populate_pool_states_via_RPC
-    - Fetch MintData from Vec<WhirlpoolFacade>, or if mint information missing from Facades use Vec<Whirlpool>
+- Finish ```populate_pool_states_via_RPC``` refactor
+    - Fetch MintData from ```Vec<WhirlpoolFacade>```, or if mint information missing from Facades use ```Vec<Whirlpool>```
     - Construct timestamp hasmap
-- Refactor SwapQuote logic for Vec<PoolState> struct
-- Implement decrease/increase liquidity logic for Vec<PoolState> struct
+- Refactor SwapQuote logic for ```Vec<PoolState>``` struct
+- Implement decrease/increase liquidity logic for ```Vec<PoolState>``` struct
 - Create CLI prototype
-- Implement update_pool_states_via_websocket logic for live listening
+- Implement ```update_pool_states_via_websocket``` logic for live listening
