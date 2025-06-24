@@ -4,22 +4,20 @@ ALL CRATES ARE UNTESTED AND NOT INTENDED FOR PRODUCTION USE
 
 ## Usage 
 
-CLI/GUI pending, for now just run a 
+CLI/GUI pending, for now just run a quick (not quick at all, takes like 5-10 mins) 
 
 ```
-cargo build --release
+cargo run
 ```
 
-and then a simple python wrapper to run the binary should suffice. One could also use the crates as a dependency, but consider my prior warning.
+after implementing your logic in ```crates/cli/src/main.rs``` to test functions. 
 
-## Roadmap 
+## TO-DO
 
-- Add decimal information for quote
-- Release CLI prototype 
-- Wrap quoter in an async for continuous quote streams
-    - This logic is given elsewhere in a proprietary project, will release it here later because its easy
-- Add LP quotes
-- Add reward quotes 
-- Incorporate blockchain data to quotes, e.g. token transfer fees & block height 
-- Switch to websocket logic 
-    - This logic is given elsewhere in a proprietary project, will be released here when no longer utilised. 
+- Finish populate_pool_states_via_RPC
+    - Fetch MintData from Vec<WhirlpoolFacade>, or if mint information missing from Facades use Vec<Whirlpool>
+    - Construct timestamp hasmap
+- Refactor SwapQuote logic for Vec<PoolState> struct
+- Implement decrease/increase liquidity logic for Vec<PoolState> struct
+- Create CLI prototype
+- Implement update_pool_states_via_websocket logic for live listening
