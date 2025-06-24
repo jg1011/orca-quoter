@@ -1,0 +1,8 @@
+[package]
+name = "liquidity"
+version = "1.0.0"
+edition = "2024"
+
+[lib]
+name = "liquidity"
+path = "src/lib.rs"

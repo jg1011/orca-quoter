@@ -1,5 +1,8 @@
 [workspace]
 members = [
-    "crates/swap-quoter",
-    "crates/pool-utils"
+    "crates/swap",
+    "crates/pool", 
+    "crates/mint",
+    "crates/liquidity",
+    "crates/cli"
 ]

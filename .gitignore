@@ -2,3 +2,4 @@
 /mint_data.json
 /simple-wrapper/
 /.env/
+/crates/pool-utils/src/main.rs
